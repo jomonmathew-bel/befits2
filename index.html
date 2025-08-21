@@ -41,7 +41,7 @@
             <h1 class="text-3xl font-bold text-gray-800">Event Registration</h1>
             <p class="text-gray-600">Please sign in with your Google account to register for events.</p>
             <div id="g_id_onload"
-                 data-client_id="242019998629-mgq8a9rkj150erk10h7galvfj07bkgjh.apps.googleusercontent.com"
+                 data-client_id="YOUR_GOOGLE_CLIENT_ID"
                  data-callback="handleCredentialResponse"
                  data-auto_prompt="false">
             </div>
@@ -111,8 +111,17 @@
     </div>
 
     <script>
+        // INSTRUCTIONS FOR GOOGLE APPS SCRIPT:
+        // 1. In your Google Apps Script project, go to "Deploy" -> "New deployment".
+        // 2. Select the gear icon next to "Select type" and choose "Web app".
+        // 3. For "Execute as", select "Me".
+        // 4. For "Who has access", select "Anyone".
+        // 5. Click "Deploy".
+        // 6. After the deployment is successful, a pop-up will show the "Deployment ID" and "Web app URL".
+        // 7. Copy the "Web app URL" and paste it below, replacing 'YOUR_APPS_SCRIPT_URL'.
+
         // Use a unique ID for the apps script, as this is how it will be uniquely identified
-        const APPS_SCRIPT_URL = 'https://script.google.com/a/macros/bcmch.org/s/AKfycbx0PxI2rDuKtAOjM1m03CzENB9g2DaYprQy01ABs-XbfSXQ52F0L3sC0sPnZ6SDFLeJ/exec';
+        const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL';
 
         function showMessage(message, type = 'success') {
             const messageBox = document.getElementById('message-box');
@@ -190,4 +199,3 @@
     </script>
 </body>
 </html>
-google_clien
